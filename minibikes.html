@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<title>andreanedl</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/me.png" style="width:100%;">
+    <h4><b style="color:black">Andréane d'Arcy-Lepage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-reply fa-fw w3-margin-right"></i><b>HOME</b></a>
+    <a href="#vehicles" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-motorcycle fa-fw w3-margin-right"></i><b>VEHICLES</b></a> 
+    <a href="#fabrication" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-wrench fa-fw w3-margin-right"></i><b>FABRICATION</b></a> 
+    <a href="#tests" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-check fa-fw w3-margin-right"></i><b>TESTS</b></a> 
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-group fa-fw w3-margin-right"></i><b>TEAM</b></a> 
+    <a href="#videoclip" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-video-camera fa-fw w3-margin-right"></i><b>VIDEO CLIP</b></a> 
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="minibikes">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b style="color:black">Mini Bikes</b></h1>
+    <p style="background-color:#673BB7"> </br> </p>
+  </header>
+
+
+  <!-- VEHICLES -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="vehicles"><b style="color:black">Vehicles</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+  
+  <!-- Vehicles First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="images/minibikes_bike.png" alt="MiniBike" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-motorcycle fa-fw w3-center"></i>    Mini Bike</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="images/minibikes_spider.png" alt="Spider" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-motorcycle fa-fw w3-center"></i>    Spider</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Vehicles Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="images/minibikes_motocross.png" alt="Motocross" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-motorcycle fa-fw w3-center"></i>    Motocross</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="images/minibikes_tracteur.png" alt="LawnMower" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-motorcycle fa-fw w3-center"></i>    Lawn Mower</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="fabrication"><b style="color:black">Fabrication</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <!-- FAB SCRAP Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_scrapspider.png" alt="ScrapSpider" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Spider</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_scrapBike.png" alt="ScrapBike" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Bike</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_scrapmotocross.png" alt="ScrapMotocross" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Motocross</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_mill.png" alt="Mill" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Milling</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_sprocket.png" alt="CNC" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Sprocket CNC Machining</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>The motocross sprocket fabrication represents the essence of this project.
+          Here is what happened: <br>
+          Let's machined our own sprocket to save money!
+          Oops we screwed up on our first attempt, let's try again next to the hole we just machined. 
+          I guess we need a little taper on the teeth, we'll just grind it. 
+          Finally, we poorly welded the shaft to our beautiful sprocket.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_lathe.png" alt="Lathe" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Lathe</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FAB Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_welding.png" alt="Welding" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Welding</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_grinding.png" alt="Grinding" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Grinding</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_pressdrill.png" alt="PressDrill" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Press Drill</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- FAB ASSY Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="images/minibikes_bikeassy.png" alt="BikeAssy" style="width:100%">
+        <div class="w3-bar-block w3-white">
+          <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Bike Assembly</a> 
+        </div>
+        <div class="w3-container w3-white">
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="images/minibikes_spiderassy.png" alt="SpiderAssy" style="width:100%">
+        <div class="w3-bar-block w3-white">
+          <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Spider Assembly</a> 
+        </div>
+        <div class="w3-container w3-white">
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="images/minibikes_motor.png" alt="Motor" style="width:100%">
+        <div class="w3-bar-block w3-white">
+          <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Lawn Mower Assembly</a> 
+        </div>
+        <div class="w3-container w3-white">
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Expedition -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="tests"><b style="color:black">Tests</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <!-- 1st Expdition First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_exp.png" alt="exp" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    ...</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_exp.png" alt="exp" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    ...</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_exp.png" alt="exp" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    ...</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 2nd Expdition Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_exp.png" alt="exp" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    ...</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_exp.png" alt="exp" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    ...</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_exp.png" alt="exp" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    ...</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="team"><b style="color:black">Team</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <!-- Team First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_pilon.png" alt="Raphael" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-user fa-fw w3-center"></i>    Raphaël Pilon</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_leboeuf.png" alt="Maxime" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-user fa-fw w3-center"></i>    Maxime Leboeuf</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_peloquin.png" alt="Richard-Alexandre" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-user fa-fw w3-center"></i>    Richard-Alexandre Peloquin</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  
+  <!-- Team Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_simard.png" alt="Thomas" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-user fa-fw w3-center"></i>    Thomas Parent-Simard</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_michaud.png" alt="Jean-Luc" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-user fa-fw w3-center"></i>    Jean-Luc Michaud</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/minibikes_dufault.png" alt="Jean-Francois" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-user fa-fw w3-center"></i>    Jean-François Dufault</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="videoclip"><b style="color:black">Video Clip</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+    <hr>
+    <p style="text-align:center">
+      <iframe width="1252" height="706"
+        src="http://www.youtube.com/embed/7sOWsPOcxy4?autoplay=1">
+      </iframe>
+      </p>
+  </div>
+    
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
