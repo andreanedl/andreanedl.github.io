@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>andreanedl</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/me.jpg" style="width:100%;">
+    <h4><b style="color:black">Andréane d'Arcy-Lepage</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-reply fa-fw w3-margin-right"></i><b>HOME</b></a>
+    <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-video-camera fa-fw w3-margin-right"></i><b>DEMO</b></a> 
+    <a href="#control" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-sliders fa-fw w3-margin-right"></i><b>CONTROL</b></a> 
+    <a href="#sensors" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-tachometer fa-fw w3-margin-right"></i><b>SENSORS</b></a> 
+    <a href="#tracking" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-bar-chart fa-fw w3-margin-right"></i><b>TRACKING</b></a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-envelope fa-fw w3-margin-right"></i><b>CONTACT</b></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="minibikes">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b style="color:black">Smart Garden</b></h1>
+    <p style="background-color:#673BB7"> </br> </p>
+  </header>
+
+  <!-- DEMO -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="demo"><b style="color:black">Demo</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <video width="1268" controls>
+        <source src="videos/smartgarden_whole.mp4" type="video/mp4">
+        <source src="videos/smartgarden_whole.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <!-- CONTROL -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="control"><b style="color:black">Control</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <!-- CONTROL Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_watering.jpg" alt="Water" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-sliders fa-fw w3-center"></i>    Watering</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>The first attempt was to use an air pump creating pressure in a plastic bottle which ejects the water out of it. 
+          I used an extra pump I had from a previous project. 
+          For <a href="shotbot.html">ShotBot</a>, it's very important to use an air pump and not a suction pump to keep the soda carbonated. 
+          In this case, it was creating a syphon since the exit is lower than the water level in the bottle. 
+          For Smart Garden, the pump would turn off, but the water would keep flowing until the water level is underneath the water exit. 
+          I finally replaced the air pump by a suction pump and it works perfectly now.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_fan.jpg" alt="Fan" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-sliders fa-fw w3-center"></i>    Ventilation</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_lightbulb.jpg" alt="Light" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-sliders fa-fw w3-center"></i>    Full Spectrum Light</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SENSORS -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="sensors"><b style="color:black">Sensors</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+  
+  <!-- SENSORS First Photo Grid-->
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_soilsensor.jpg" alt="Soil" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-tachometer fa-fw w3-center"></i>    Soil Moisture</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>https://www.amazon.com/gp/product/B07QXZC8TQ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1 https://www.ebay.com/itm/Soil-Humidity-Hygrometer-Moisture-Detection-Sensor-Module-with-Wire-For-Arduino/153515655924</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_airsensor.jpg" alt="Air" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-tachometer fa-fw w3-center"></i>    Air Humidity and Temperature</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>https://www.amazon.com/gp/product/B06ZZ39PGF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_lightsensor.jpg" alt="Light" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-tachometer fa-fw w3-center"></i>    Light</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>https://www.amazon.com/gp/product/B06ZZ39PGF/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRACKING -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="tracking"><b style="color:black">Tracking</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <!-- TRACKING Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_graphsoil.jpg" alt="Water" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-bar-chart fa-fw w3-center"></i>    Watering</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>I created a website hosted locally and the arduino controlling the smart garden sends the data to it automatically. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_graphair.jpg" alt="Fan" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-bar-chart fa-fw w3-center"></i>    Ventilation</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/smartgarden_graphlight.jpg" alt="Graph" style="width:100%">
+      <div class="w3-bar-block w3-white">
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-bar-chart fa-fw w3-center"></i>    Light</a> 
+      </div>
+      <div class="w3-container w3-white">
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey">
+  <h4 id="contact"><b style="color:black">Contact Me</b></h4>
+  <p style="background-color:#673BB7"> </br> </p>
+  <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+    <div class="w3-third w3-light-grey">
+      <p><i class="fa fa-envelope w3-xxlarge w3-text-deep-purple"></i></p>
+      <p style="color:black">info@andreanedl.com</p>
+    </div>
+    <div class="w3-third w3-light-grey">
+      <p><i class="fa fa-map-marker w3-xxlarge w3-text-deep-purple"></i></p>
+      <p style="color:black">Los Angeles, US</p>
+    </div>
+    <div class="w3-third w3-light-grey">
+      <p><i class="fa fa-linkedin w3-xxlarge w3-text-deep-purple"></i></p>
+      <p style="color:black">Find me on <a href="https://www.linkedin.com/in/andreane-d-arcy-lepage/">LinkedIn</a></p>
+    </div>
+  </div>
+</div>
+
+<!--
+I was so excited to see the first sprout. I knew what I was doing when I automated the functions, the Smart part of Smart Garden wasn't the problem, the Garden part was. I was lost and scared of messing up, so I got some advice from my sister and my mom. They helped me choose what I would plant. I wanted to grow cucumbers, but it probably too big/tall. We finally decided to grow some arugula and spinach. They also helped me with the humidity. I had a sensor, but nothing to control the humidity yet. It would've been useless at that time anyway because I didn't even know ehat the target should be. The first readings were at 95% and my sister found out it should be at 85%. I tried to just open the lid a little bit, but it drops the humidity at 75%. I added a fan and a simple controller and it fixed the problem.
+--> 
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
