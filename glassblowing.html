@@ -26,9 +26,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-reply fa-fw w3-margin-right"></i><b>HOME</b></a>
-    <a href="#marble" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-circle fa-fw w3-margin-right"></i><b>MARBLE</b></a> 
-    <a href="#bowl" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-stop-circle-o fa-fw w3-margin-right"></i><b>BOWL</b></a> 
-    <a href="#glass" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-glass fa-fw w3-margin-right"></i><b>GLASS</b></a> 
+    <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-video-camera fa-fw w3-margin-right"></i><b>VIDEO</b></a> 
+    <a href="#fabrication" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-wrench fa-fw w3-margin-right"></i><b>FABRICATION</b></a> 
+    <a href="#parts" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-check fa-fw w3-margin-right"></i><b>FINAL PARTS</b></a>  
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-deep-purple"><i class="fa fa-envelope fa-fw w3-margin-right"></i><b>CONTACT</b></a>
   </div>
 </nav>
@@ -47,26 +47,42 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p style="background-color:#673BB7"> </br> </p>
   </header>
 
-
-  <!-- MARBLE -->
+  <!-- VIDEO -->
   <div class="w3-container" style="margin-bottom:32px">
-    <h4 id="marble"><b style="color:black">Marble</b></h4>
+    <h4 id="demo"><b style="color:black">Video</b></h4>
+    <p style="background-color:#673BB7"> </br> </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <video width="1268" controls>
+        <source src="videos/glass_blowing.mp4" type="video/mp4">
+        <source src="videos/glass_blowing.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <!-- FABRICATION -->
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4 id="marble"><b style="color:black">Fabrication</b></h4>
     <p style="background-color:#673BB7"> </br> </p>
   </div>
   
-  <!-- MARBLE First Photo Grid-->
+  <!-- FABRICATION First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_marble1.jpg" alt="1" style="width:100%">
+      <img src="images/glass_warm.jpg" alt="1" style="width:100%">
       <div class="w3-bar-block w3-white">
-        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    1</a> 
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    Keep your part warm</a> 
       </div>
       <div class="w3-container w3-white">
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_marble2.jpg" alt="2" style="width:100%">
+      <img src="images/glass_color.jpg" alt="2" style="width:100%">
       <div class="w3-bar-block w3-white">
         <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    2</a> 
       </div>
@@ -75,7 +91,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_marble3.jpg" alt="3" style="width:100%">
+      <img src="images/glass_rolling.jpg" alt="3" style="width:100%">
       <div class="w3-bar-block w3-white">
         <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    3</a> 
       </div>
@@ -85,16 +101,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <!-- BOWL -->
-  <div class="w3-container" style="margin-bottom:32px">
-    <h4 id="interface"><b style="color:black">Bowl</b></h4>
-    <p style="background-color:#673BB7"> </br> </p>
-  </div>
-
-  <!-- BOWL Photo Grid-->
+  <!-- FABRICATION Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_bowl1.jpg" alt="1" style="width:100%">
+      <img src="images/glass_flat.jpg" alt="1" style="width:100%">
       <div class="w3-bar-block w3-white">
         <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    1</a> 
       </div>
@@ -103,7 +113,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_bowl2.jpg" alt="2" style="width:100%">
+      <img src="images/glass_blowing.jpg" alt="2" style="width:100%">
       <div class="w3-bar-block w3-white">
         <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    2</a> 
       </div>
@@ -112,7 +122,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_bowl3.jpg" alt="3" style="width:100%">
+      <img src="images/glass_torch.jpg" alt="3" style="width:100%">
       <div class="w3-bar-block w3-white">
         <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-wrench fa-fw w3-center"></i>    3</a> 
       </div>
@@ -122,36 +132,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <!-- GLASS -->
+  <!-- FINAL PARTS -->
   <div class="w3-container" style="margin-bottom:32px">
-    <h4 id="glass"><b style="color:black">Glass</b></h4>
+    <h4 id="parts"><b style="color:black">Final Parts</b></h4>
     <p style="background-color:#673BB7"> </br> </p>
   </div>
 
-  <!-- GLASS First Photo Grid-->
+  <!-- FINAL PARTS First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_glass1.jpg" alt="1" style="width:100%">
+      <img src="images/glass_marble.jpg" alt="1" style="width:100%">
       <div class="w3-bar-block w3-white">
-        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    1</a> 
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    Paper Weight</a> 
       </div>
       <div class="w3-container w3-white">
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_glass2.jpg" alt="2" style="width:100%">
+      <img src="images/glass_bowl.jpg" alt="2" style="width:100%">
       <div class="w3-bar-block w3-white">
-        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    2</a> 
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    Bowl</a> 
       </div>
       <div class="w3-container w3-white">
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/glassblowing_glass3.jpg" alt="3" style="width:100%">
+      <img src="images/glass_glass.jpg" alt="3" style="width:100%">
       <div class="w3-bar-block w3-white">
-        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    3</a> 
+        <a class="w3-bar-item w3-button w3-padding w3-hover-white"><i class="fa fa-check fa-fw w3-center"></i>    Glass</a> 
       </div>
       <div class="w3-container w3-white">
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
